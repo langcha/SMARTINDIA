@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>untitle</title>
+<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="HandheldFriendly" content="True">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<!-- CSS  -->
+<link rel="stylesheet" href="lib/font-awesome/web-fonts-with-css/css/fontawesome-all.css">
+<link rel="stylesheet" href="css/materialize.min.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- materialize icon -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Owl carousel -->
+<link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
+<!-- Slick CSS -->
+<link rel="stylesheet" type="text/css" href="lib/slick/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="lib/slick/slick/slick-theme.css">
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="lib/Magnific-Popup-master/dist/magnific-popup.css">
+<link rel="stylesheet" href="css/popup.css">
+<!--<style>
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: pink !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: pink !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: pink !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: pink !important;
+}
+
+</style>-->
+<style>
+.login-form, .register-form {
+    margin: 30px 20px 30px;
+    background: 
+    #fff;
+    padding: 12px;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+ input[type=text]:not(.browser-default) {
+	margin: 0 0 0px 0;
+}
+
+.header-top {
+	width:80%;
+	padding:10px;
+	background:url(img/top-bg.jpg) no-repeat;
+	font-weight:bold;
+	margin:0px auto;
+	color:#F2761C;
+	font-size: 15px;
+}
+
+.line {
+	border-top:1px #333333 dashed;
+	margin-top: 10px;
+}
+</style>
+</head>
+<body id="homepage">
+<!-- BEGIN PRELOADING -->
+<div class="preloading">
+  <div class="wrap-preload">
+    <div class="cssload-loader"></div>
+  </div>
+</div>
+<!-- END PRELOADING -->
+<!-- HEADER -->
+<!--<header id="header">
+<div class="nav-wrapper container">
+  <div class="header-logo">
+    <a href="#" class="nav-logo"><i class="fab fa-envira"></i> GroMart</a>
+  </div>
+  <div class="header-menu-button">
+    <a href="#" data-activates="nav-mobile-category" class="button-collapse" id="button-collapse-category">
+    <div class="cst-btn-menu">
+      <i class="fas fa-align-right"></i>
+    </div>
+    </a>
+  </div>
+  <div class="header-icon-menu">
+    <a href="#" data-activates="nav-mobile-account" class="button-collapse" id="button-collapse-account"><i class="far fa-user-circle"></i></a>
+  </div>
+  <div class="header-icon-menu cart-item-wrap">
+    <a href="shopping-cart.html">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-item">4</span>
+    </a>
+  </div>
+</div>
+</header>-->
+<!-- END HEADER -->
+<!-- SIDE NAV-->
+
+<!-- END SIDENAV-->
+<!-- CONTENT -->
+<div id="page-content">
+<div class="row" style="text-align:center;">
+<div class="header-top">Welcome to Smart India Bazar!</div>
+<h5>Member Registration</h5>
+<!-- <p>This is the best App Ever!</p> -->
+</div>
+  <div class="login-form" style="margin-top:10px;">
+    <div class="container">
+      
+      <div class="row">
+        <form class="col s12">
+        
+        <input type="hidden" id="memberId" />
+        <input type="hidden" id="addressId" />
+        
+        <div class="row">
+            <div class="input-field col s12">
+            <label for="username">User Type</label>
+             <select id="userType">
+                  <option value="">Select User Type</option>
+                  <option value="MEMBER">MEMBER</option>
+                  <option value="AGENT">AGENT</option>
+                  <option value="BRANCH">BRANCH</option>                  
+             </select>
+              
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="input-field col s6">
+            <label for="name">Name</label>
+              <input id="name" type="text" class="validate">
+            </div>
+            
+            <div class="input-field col s6">
+            <label for="gender">Gender</label>
+             <select id="gender">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+             </select>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="input-field col s6">
+            <label for="dob">DOB</label>
+              <input id="dob" type="date" class="validate" style="margin-bottom:0px;">
+              
+            </div>
+            <div class="input-field col s6">
+            <label for="age">Age</label>
+              <input id="age" type="text" class="validate">
+              
+            </div>
+          </div>
+          
+          
+          
+          <div class="row">
+            <div class="input-field col s12">
+            <label for="mobile">Mobile Number</label>
+              <input id="mobile" type="text" class="validate" style="width: 96%;">
+              
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="input-field col s12">
+            <label for="email">Email ID</label>
+              <input id="email" type="text" class="validate" style="width: 96%;">
+              
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="input-field col s12">
+            <label for="loginId">Login Id</label>
+              <input id="loginId" type="text" class="validate" style="width: 96%;">
+              
+            </div>
+          </div>
+		  
+		   
+		  
+          <div class="row">
+            <div class="input-field col s12">
+              <label for="password">Password</label>
+              <input id="password" type="password" class="validate" placeholder="*****" style="width: 96%;">
+              
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="input-field col s12">
+              <label for="Address" style="font-weight:bold;">Address</label>
+              <div class="line"></div>
+              <table width="100%" border="1">
+              <tr>
+                <td style="width:50%"><label style="font-size:13px;">Line1:</label><input id="address1" type="text" class="validate"></td>
+                <td style="width:50%"><label style="font-size:13px;">Line2:</label><input id="address2" type="text" class="validate"></td>
+              </tr>
+              <tr>
+                <td style="width:50%"><label style="font-size:13px;">Landmark:</label><input id="landmark" type="text" class="validate"></td>
+                <td style="width:50%"><label style="font-size:13px;">State:</label><input id="state" type="text" class="validate"></td>
+              </tr>
+              <tr>
+                <td style="width:50%"><label style="font-size:13px;">Dist:</label><input id="district" type="text" class="validate"></td>
+                <td style="width:50%"><label style="font-size:13px;">Pincode:</label><input id="pincode" type="text" class="validate" onblur="fetchVillage(this.value);"></td>
+              </tr>
+              
+              <tr>
+                <td style="width:50%"><label style="font-size:13px;">Village/Town/Area:</label><input id="village" type="text" class="validate"></td>
+                <td style="width:50%"><label style="font-size:13px;">Area Code:</label><input id="villageCode" type="text" class="validate"></td>
+              </tr>
+              
+            </table>
+				<div class="line" style="margin-bottom:10px;"></div>
+              
+              
+            </div>
+          </div>     
+          
+           
+        <div class="row">
+            <div class="input-field col s12">
+            <label for="username">File Upload</label>
+              <input id="username" type="file" class="validate" style="width:100%; border: 1px #cccccc solid; padding: 5px;">
+              <div class="setting-photo" style="margin-top:10px;">
+              <img alt="avatar" src="img/profile.jpg" style="width:90px;">
+            </div>
+            </div>
+          </div>
+          
+          <div class="row" style="margin-top:20px;">
+            <div class="col s12">
+                <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked">
+                <label class="label-checkbox" for="filled-in-box" style="color:#333333; font-size:13px;"><strong> Service Assign</strong></label>
+            </div>
+          </div>
+          
+          
+          <div class="row">
+            <div class="input-field col s12 center">
+              <input class="waves-effect waves-light btn" value="Register" type="button" style="width: 100%;" onclick="memberRegister();"></div>
+          </div>
+          
+         
+        </form>
+        
+      </div>
+      <!--<div class="row fp-text">
+        <div class="col s12">
+          <div class="forgot-password-link">
+            <a href="#">Forgot Password</a>
+          </div>
+        </div>
+      </div>-->
+      
+      
+      <div class="row">
+        <div class="col s12 center" style="font-size:12px;">
+           Copyright &copy; <a href="#">SMART INDIA BAZAAR</a> All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END CONTENT-->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" onclick="closePopup('myModal');">&times;</span>
+      <h5>Notification</h5>
+    </div>
+    <div class="modal-body">
+      <p><strong id="msg"></strong></p>
+      
+    </div>
+    <div class="modal-footer" style="text-align:right;">
+     <div style="width:auto; text-align:right;">      
+      
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- Script -->
+<script src="js/jquery.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<!-- Owl carousel -->
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="lib/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+<!-- Custom script -->
+<script src="js/custom.js"></script>
+<script src="custom-js/member.js"></script>
+</body>
+
+
+</html>
